@@ -9,7 +9,8 @@ public class CompetitorDecoratorA extends CompetitorDecorator {
 		super(competitor);
 	}
 
-	public void sing() {
+	@Override
+    public void sing() {
 		this.dance();
 		super.sing();
 	}

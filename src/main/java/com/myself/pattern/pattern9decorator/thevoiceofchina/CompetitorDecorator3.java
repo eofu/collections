@@ -1,9 +1,8 @@
 package com.myself.pattern.pattern9decorator.thevoiceofchina;
 
-import com.myself.pattern.pattern9decorator.thevoiceofchina.Competitor;
-
 public class CompetitorDecorator3 extends Competitor {
-	public void sing() {
+	@Override
+    public void sing() {
 		super.sing();
 		this.introduceBackground();
 	}

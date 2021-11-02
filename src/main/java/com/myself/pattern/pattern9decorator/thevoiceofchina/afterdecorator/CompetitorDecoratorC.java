@@ -9,7 +9,8 @@ public class CompetitorDecoratorC extends CompetitorDecorator {
 		super(competitor);
 	}
 
-	public void sing() {
+	@Override
+    public void sing() {
 		this.introduceBGrd();
 		super.sing();
 	}
