@@ -1,23 +1,13 @@
 package com.myself.test;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
+import com.myself.utils.CopyBeanUtils;
 
 public class Test {
-	private volatile Test test;
-
-	private Test() {
-
-	}
-
-	public Test getTestInstance() {
-		if (test == null) {
-			synchronized (this) {
-				if (test == null) {
-					test = new Test();
-				}
-			}
-		}
-		return test;
-	}
+    public static void main(String[] args) throws InterruptedException {
+        Car car = new Car("car", 10.0, 20.0, 50);
+        Tree tree = new Tree();
+        CopyBeanUtils.copyProperties(car, tree);
+        System.out.println(car);
+        System.out.println(tree);
+    }
 }
