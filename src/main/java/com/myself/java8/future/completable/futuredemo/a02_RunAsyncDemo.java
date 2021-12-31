@@ -2,7 +2,7 @@ package com.myself.java8.future.completable.futuredemo;
 
 import java.util.concurrent.*;
 
-public class a2_RunAsyncDemo {
+public class a02_RunAsyncDemo {
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
         // 自定义线程池
         ExecutorService executor = Executors.newCachedThreadPool();

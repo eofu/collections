@@ -7,7 +7,7 @@ import java.util.concurrent.TimeoutException;
 /**
  * 某个任务执行异常时，执行的回调方法;并且有抛出异常作为参数，传递到回调方法。
  */
-public class a6_ExceptionallyDemo {
+public class a06_ExceptionallyDemo {
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
         CompletableFuture<String> firstFuture = CompletableFuture.supplyAsync(
                 () -> {

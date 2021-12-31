@@ -8,7 +8,7 @@ import com.myself.utils.SnowFlakeIdWorker;
 
 import java.util.concurrent.*;
 
-public class a1_SupplyAsyncDemo {
+public class a01_SupplyAsyncDemo {
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
         UserInfoService userInfoService = new UserInfoService();
         MedalService medalService = new MedalService();

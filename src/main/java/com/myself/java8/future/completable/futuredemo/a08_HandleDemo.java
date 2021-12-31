@@ -5,9 +5,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
 /**
- * 某个任务执行完成后，执行的回调方法，无返回值；并且whenComplete方法返回的CompletableFuture的result是上个任务的结果。
+ * 某个任务执行完成后，执行回调方法，并且是有返回值的;并且handle方法返回的CompletableFuture的result是回调方法执行的结果。
  */
-public class a7_WhenCompleteDemo {
+public class a08_HandleDemo {
     public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
         CompletableFuture<String> firstFuture = CompletableFuture.supplyAsync(
                 () -> {
@@ -21,13 +21,14 @@ public class a7_WhenCompleteDemo {
                 }
         );
 
-        CompletableFuture<String> then = firstFuture.whenComplete((a, throwable) -> {
-            System.out.println("current thread name :" + Thread.currentThread().getName());
+        CompletableFuture<String> then = firstFuture.handle((a, throwable) -> {
             System.out.println("last task return is " + a);
             if ("hello world".equals(a)) {
                 System.out.println(a);
+                return "in if";
             }
             System.out.println("whencomplete");
+            return null;
         });
 
         System.out.println(then.get());
