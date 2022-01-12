@@ -1,4 +1,4 @@
-package com.myself.pattern.pattern4proxy.dynamicproxy.cglib;
+package com.myself.pattern.pattern4proxy.dynamicproxy.cglib.example01;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -22,8 +22,8 @@ public class PaoTui implements MethodInterceptor {
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         // 业务的增强
         System.out.println("跑腿接单");
-        methodProxy.invokeSuper(o, objects);
+        Object o1 = methodProxy.invokeSuper(o, objects);
         System.out.println("东西送达");
-        return null;
+        return o1;
     }
 }

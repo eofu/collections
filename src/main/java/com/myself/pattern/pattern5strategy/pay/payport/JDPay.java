@@ -1,7 +1,6 @@
 package com.myself.pattern.pattern5strategy.pay.payport;
 
 import com.myself.pattern.pattern5strategy.pay.PayState;
-import com.myself.pattern.pattern5strategy.pay.payport.PayMent;
 
 public class JDPay implements PayMent {
     @Override

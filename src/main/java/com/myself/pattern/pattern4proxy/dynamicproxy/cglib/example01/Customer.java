@@ -1,4 +1,4 @@
-package com.myself.pattern.pattern4proxy.dynamicproxy.cglib;
+package com.myself.pattern.pattern4proxy.dynamicproxy.cglib.example01;
 
 public class Customer {
     public void buy() {

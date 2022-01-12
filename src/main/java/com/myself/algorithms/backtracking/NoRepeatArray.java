@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class NoRepeatArray {
     static List<List<Integer>> res = new LinkedList<>();
-
+    
     public static void main(String[] args) {
         int[] i = {1, 2, 3};
         List<List<Integer>> permute = permute(i);
@@ -17,22 +17,24 @@ public class NoRepeatArray {
             System.out.println(integers);
         }
     }
-
-    /* 主函数，输入一组不重复的数字，返回它们的全排列 */
+    
+    /**
+     * 主函数，输入一组不重复的数字，返回它们的全排列
+     */
     static List<List<Integer>> permute(int[] nums) {
         // 记录「路径」
         LinkedList<Integer> track = new LinkedList<>();
         backtrack(nums, track);
         return res;
     }
-
+    
     static void backtrack(int[] nums, LinkedList<Integer> track) {
         // 触发结束条件
         if (track.size() == nums.length) {
             res.add(new LinkedList(track));
             return;
         }
-
+        
         for (int num : nums) {
             // 排除不合法的选择
             if (track.contains(num)) {
