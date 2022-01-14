@@ -1,9 +1,5 @@
 package com.myself.pattern.pattern7delegate.leader;
 
-import com.myself.pattern.pattern7delegate.leader.ITarget;
-import com.myself.pattern.pattern7delegate.leader.TargetA;
-import com.myself.pattern.pattern7delegate.leader.TargetB;
-
 import java.util.HashMap;
 import java.util.Map;
 

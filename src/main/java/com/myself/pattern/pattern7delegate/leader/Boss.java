@@ -1,7 +1,5 @@
 package com.myself.pattern.pattern7delegate.leader;
 
-import com.myself.pattern.pattern7delegate.leader.Leader;
-
 public class Boss {
     public static void main(String[] args) {
         // 委派模式是静态代理模式和策略模式的特殊组合
