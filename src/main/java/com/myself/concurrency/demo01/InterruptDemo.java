@@ -2,6 +2,9 @@ package com.myself.concurrency.demo01;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author yangshuai
+ */
 public class InterruptDemo {
 
 	private static int i;

@@ -9,7 +9,7 @@ public class ExtensionTest {
 
 		LoadBalance balance = extensionLoader.getAdaptiveExtension();
 		LoadBalance loadBalance = extensionLoader.getExtension("true");
-
+ 
 		System.out.println(balance);
 		System.out.println(loadBalance);
 	}
