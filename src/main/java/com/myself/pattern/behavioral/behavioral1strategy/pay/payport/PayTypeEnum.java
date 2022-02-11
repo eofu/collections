@@ -6,9 +6,9 @@ public enum PayTypeEnum {
      */
     ALI_PAY(new AliPay()), JD_PAY(new JDPay()), WECHAT_PAY(new WeChatPay());
     
-    private final com.myself.pattern.behavioral.behavioral1strategy.pay.payport.PayMent payMent;
+    private final PayMent payMent;
     
-    PayTypeEnum(com.myself.pattern.behavioral.behavioral1strategy.pay.payport.PayMent payMent) {
+    PayTypeEnum(PayMent payMent) {
         this.payMent = payMent;
     }
     

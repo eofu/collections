@@ -20,4 +20,9 @@ public class Test8 implements Serializable {
     public final boolean compareAndSet(boolean expectedValue, boolean newValue) {
         return value.compareAndSet(this, expectedValue ? 1 : 0, newValue ? 1 : 0);
     }
+    
+    public static void main(String[] args) {
+        Test8 test8 = new Test8();
+        test8.compareAndSet(true, false);
+    }
 }
