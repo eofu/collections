@@ -16,39 +16,42 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test01 {
+public class Test02 {
     public static void main(String[] args) throws InvalidAlgorithmParameterException, NoSuchPaddingException, UnsupportedEncodingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
-        Test01 test01 = new Test01();
-    
+        Test02 test01 = new Test02();
+        
         String param = "{\n" +
                 "    \"businessKey\": \"1\",\n" +
                 "    \"businessSystemCode\": \"LUOHE_ZFCG\",\n" +
                 "    \"businessSystemName\": \"政府采购\",\n" +
                 "    \"areaCode\": \"1\",\n" +
-        
+                
                 "    \"buyProjectId\": \"1\",\n" +
-                "    \"bidCode\": \"1\",\n" +
-                "    \"bidName\": \"1\",\n" +
-                "    \"securityFee\": \"1\",\n" +
-                "    \"prePriceTotal\": \"1\",\n" +
-                "    \"advice\": \"1\",\n" +
-                "    \"supplyQualification\": \"1\",\n" +
+                "    \"projectCode\": \"1\",\n" +
+                "    \"projectCategoryCode\": \"1\",\n" +
+                "    \"projectCategoryName\": \"1\",\n" +
+                "    \"projectName\": \"1\",\n" +
+                "    \"tendereeCode\": \"1\",\n" +
+                "    \"tendereeName\": \"1\",\n" +
                 
-                "    \"purPerson\": \"1\",\n" +
-                "    \"purCode\": \"1\",\n" +
-                "    \"contact\": \"1\",\n" +
-                "    \"contactPhone\": \"1\",\n" +
+                "    \"buyprojectTypeCode\": \"1\",\n" +
+                "    \"buyprojectTypeName\": \"1\",\n" +
+                "    \"contacts\": \"1\",\n" +
+                "    \"contactsPhone\": \"1\",\n" +
+                "    \"investmentProjectUniCode\": \"1\",\n" +
+                "    \"delegateType\": \"1\",\n" +
+                "    \"purOrgForm\": \"1\",\n" +
+                "    \"ppp\": \"1\",\n" +
+                "    \"regulPart\": \"1\",\n" +
+                "    \"regulPartCode\": \"1\",\n" +
                 "    \"content\": \"1\",\n" +
-                "    \"purType\": \"1\",\n" +
-                "    \"entrustType\": \"1\",\n" +
-                "    \"purOrg\": \"1\",\n" +
-                "    \"purMethod\": \"1\",\n" +
+                "    \"purchasingAgentCode\": \"1\",\n" +
+                "    \"purchasingAgent\": \"1\",\n" +
                 
-                "    \"tZfcgBidDetailList\":[{\"bidId\":\"1\",\"count\":1,\"unit\":\"1\"},{\"bidId\":\"2\",\"count\":2,\"unit\":\"2\"}],\n" +
-                
+                "    \"agencyCode\": \"1\",\n" +
                 "    \"agencyName\": \"1\"\n" +
                 "}";
-        String number = "TOC0602";
+        String number = "TOC0601";
         
         
         test01.doPost(param,number);
@@ -70,7 +73,7 @@ public class Test01 {
         map.put("timeStamp", timeStamp);
         map.put("sign", sign);
         map.put("paramData", paramData);
-        map.put("businessType", "APP_TO_TRADDING");
+        map.put("businessType", "APP_TO_CGV2");
         String result = HttpClientUtil.doPost("http://192.168.1.63:9527/app", map);
         String s = EncryptUtils.decryptGeneralAES(result, AppConstance.APP_REQUEST_ASE_KEY, AppConstance.IV_STRING);
         System.out.println("result: " + s);
