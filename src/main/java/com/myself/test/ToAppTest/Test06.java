@@ -16,42 +16,15 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test02 {
+public class Test06 {
     public static void main(String[] args) throws InvalidAlgorithmParameterException, NoSuchPaddingException, UnsupportedEncodingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
-        Test02 test01 = new Test02();
+        Test06 test01 = new Test06();
         
         String param = "{\n" +
-                "    \"businessKey\": \"1\",\n" +
-                "    \"businessSystemCode\": \"LUOHE_ZFCG\",\n" +
-                "    \"businessSystemName\": \"政府采购\",\n" +
-                "    \"areaCode\": \"1\",\n" +
-                
-                "    \"buyProjectId\": \"1\",\n" +
-                "    \"projectCode\": \"1\",\n" +
-                "    \"projectCategoryCode\": \"1\",\n" +
-                "    \"projectCategoryName\": \"1\",\n" +
-                "    \"projectName\": \"1\",\n" +
-                "    \"tendereeCode\": \"1\",\n" +
-                "    \"tendereeName\": \"1\",\n" +
-                
-                "    \"buyprojectTypeCode\": \"1\",\n" +
-                "    \"buyprojectTypeName\": \"1\",\n" +
-                "    \"contacts\": \"1\",\n" +
-                "    \"contactsPhone\": \"1\",\n" +
-                "    \"investmentProjectUniCode\": \"1\",\n" +
-                "    \"delegateType\": \"1\",\n" +
-                "    \"purOrgForm\": \"1\",\n" +
-                "    \"ppp\": \"1\",\n" +
-                "    \"regulPart\": \"1\",\n" +
-                "    \"regulPartCode\": \"1\",\n" +
-                "    \"content\": \"1\",\n" +
-                "    \"purchasingAgentCode\": \"1\",\n" +
-                "    \"purchasingAgent\": \"1\",\n" +
-                
-                "    \"agencyCode\": \"1\",\n" +
-                "    \"agencyName\": \"1\"\n" +
+                "    \"bidId\": \"1644808621222002\",\n" +
+                "    \"businessType\": \"ZFCG\"\n" +
                 "}";
-        String number = "TOC0601";
+        String number = "BUS00021";
         
         
         test01.doPost(param,number);

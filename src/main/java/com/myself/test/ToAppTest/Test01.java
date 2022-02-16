@@ -44,7 +44,7 @@ public class Test01 {
                 "    \"purOrg\": \"1\",\n" +
                 "    \"purMethod\": \"1\",\n" +
                 
-                "    \"tZfcgBidDetailList\":[{\"bidId\":\"1\",\"count\":1,\"unit\":\"1\"},{\"bidId\":\"2\",\"count\":2,\"unit\":\"2\"}],\n" +
+                "    \"tZfcgBidDetailList\":[{\"bidId\":\"1\",\"count\":1,\"specifications\":1,\"unit\":\"1\"},{\"bidId\":\"2\",\"count\":2,\"unit\":\"2\"}],\n" +
                 
                 "    \"agencyName\": \"1\"\n" +
                 "}";

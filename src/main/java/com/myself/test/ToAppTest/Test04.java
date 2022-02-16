@@ -16,9 +16,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test02 {
+public class Test04 {
     public static void main(String[] args) throws InvalidAlgorithmParameterException, NoSuchPaddingException, UnsupportedEncodingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
-        Test02 test01 = new Test02();
+        Test04 test01 = new Test04();
         
         String param = "{\n" +
                 "    \"businessKey\": \"1\",\n" +
@@ -26,32 +26,26 @@ public class Test02 {
                 "    \"businessSystemName\": \"政府采购\",\n" +
                 "    \"areaCode\": \"1\",\n" +
                 
-                "    \"buyProjectId\": \"1\",\n" +
-                "    \"projectCode\": \"1\",\n" +
-                "    \"projectCategoryCode\": \"1\",\n" +
-                "    \"projectCategoryName\": \"1\",\n" +
-                "    \"projectName\": \"1\",\n" +
-                "    \"tendereeCode\": \"1\",\n" +
-                "    \"tendereeName\": \"1\",\n" +
+                "    \"bidId\": \"1\",\n" +
+                "    \"answerclarifyVersion\": \"1\",\n" +
+                "    \"answerclarifyTime\": \"2022-02-15\",\n" +
+            
+                "    \"achieveTime\": \"2022-02-14\",\n" +
+                "    \"achieveDeadline\": \"2022-02-14\",\n" +
+                "    \"suspectDealine\": \"2022-02-14\",\n" +
+                "    \"arrivalDealine\": \"2022-02-14\",\n" +
+                "    \"bidfileClarifyTime\": \"2022-02-14\",\n" +
+                "    \"bidfileSubmitTime\": \"2022-02-14\",\n" +
+                "    \"bidopenTime\": \"2022-02-14\",\n" +
+                "    \"bidopenAddress\": \"1\",\n" +
+                "    \"bidPriceUnit\": \"1\",\n" +
                 
-                "    \"buyprojectTypeCode\": \"1\",\n" +
-                "    \"buyprojectTypeName\": \"1\",\n" +
-                "    \"contacts\": \"1\",\n" +
-                "    \"contactsPhone\": \"1\",\n" +
-                "    \"investmentProjectUniCode\": \"1\",\n" +
-                "    \"delegateType\": \"1\",\n" +
-                "    \"purOrgForm\": \"1\",\n" +
-                "    \"ppp\": \"1\",\n" +
-                "    \"regulPart\": \"1\",\n" +
-                "    \"regulPartCode\": \"1\",\n" +
-                "    \"content\": \"1\",\n" +
-                "    \"purchasingAgentCode\": \"1\",\n" +
-                "    \"purchasingAgent\": \"1\",\n" +
-                
-                "    \"agencyCode\": \"1\",\n" +
-                "    \"agencyName\": \"1\"\n" +
+                "    \"bondBank\": \"1\",\n" +
+                "    \"fileMoney\": \"1\",\n" +
+                "    \"serviceMoney\": \"1\",\n" +
+                "    \"seatMoney\": \"1\"\n" +
                 "}";
-        String number = "TOC0601";
+        String number = "TOC0009";
         
         
         test01.doPost(param,number);
